@@ -1,0 +1,11 @@
+<div> 
+    <button class="btn btn-success" (click)=" onTocategories()">Categories</button>
+ <p> user with id  is{{user.id}}</p>
+    <p> user with name is{{user.name}}</p>
+</div> 
+<div>
+    <a [routerLink]="['/user',1,'deepu']"
+     [queryParams]="{page:1,search:'deepu'}"
+     [fragment]="'load'">Details of deeepu</a>
+</div>
+<div>

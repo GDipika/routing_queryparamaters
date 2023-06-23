@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-3">
+      <ul class="nav-flex-colum nav-pills">
+        <li class="nav-item ">
+          <a class="nav-link " routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " routerLink="/user"  routerLinkActive="active">USER</a>
+        </li>   <li class="nav-item">
+          <a class="nav-link " routerLink="/categories"  routerLinkActive="active">CATEGORIES</a>
+        </li>
+      </ul>
+    </div>
+  
+    <div class="col-md-9">
+      <div class="row-col-md-12">
+        <div *ngIf="userAdded">
+          User added button clicked
+        </div>
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+  </div>
+</div>
